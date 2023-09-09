@@ -1,6 +1,3 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
 $(function () {
 
   //displays current date
@@ -113,29 +110,87 @@ $(function () {
   };
 
 
+  //Store info in local storage and save on refresh
+//9am
+  $("#saveNine").click(function(){
+    const nineAppt = $('#textNine').val();
+    localStorage.setItem('nine', nineAppt);   
+  })
+   const setNine = $("#textNine");
+  const getNine = localStorage.getItem('nine');
+  setNine.text(getNine);
 
-  // TODO: Add a listener for click events on the save button. This code should
-  // use the id in the containing time-block as a key to save the user input in
-  // local storage. HINT: What does `this` reference in the click listener
-  // function? How can DOM traversal be used to get the "hour-x" id of the
-  // time-block containing the button that was clicked? How might the id be
-  // useful when saving the description in local storage?
-  //
-  // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
-  //
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  //
-/*
-Add a if/then for time to remove time class and add applicable class comparing current time to schedule using 
-IDs (hour-9, hour-10, etc...)
-Add event listener to button that stores info in local storage and set to textarea html element
+//10am
+  $("#saveTen").click(function(){
+    const tenAppt = $('#textTen').val();
+    localStorage.setItem('ten', tenAppt);   
+  })
+   const setTen = $("#textTen");
+  const getTen = localStorage.getItem('ten');
+  setTen.text(getTen);
 
-*/
+//11am
+  $("#saveEleven").click(function(){
+    const elevenAppt = $('#textEleven').val();
+    localStorage.setItem('eleven', elevenAppt);   
+  })
+   const setEleven = $("#textEleven");
+  const getEleven = localStorage.getItem('eleven');
+  setEleven.text(getEleven);
+
+//12pm
+  $("#saveTwelve").click(function(){
+    const twelveAppt = $('#textTwelve').val();
+    localStorage.setItem('twelve', twelveAppt);  
+  })
+   const setTwelve = $("#textTwelve");
+  const getTwelve = localStorage.getItem('twelve');
+  setTwelve.text(getTwelve);
+
+//1pm
+  $("#saveThirteen").click(function(){
+    const thirteenAppt = $('#textThirteen').val();
+    localStorage.setItem('thirteen', thirteenAppt);    
+  })
+   const setThirteen = $("#textThirteen");
+  const getThirteen = localStorage.getItem('thirteen');
+  setThirteen.text(getThirteen);
+
+//2pm
+  $("#saveFourteen").click(function(){
+    const fourteenAppt = $('#textFourteen').val();
+    localStorage.setItem('fourteen', fourteenAppt);   
+  })
+   const setFourteen = $("#textFourteen");
+  const getFourteen = localStorage.getItem('fourteen');
+  setFourteen.text(getFourteen);
+
+//3pm
+  $("#saveFifteen").click(function(){
+    const fifteenAppt = $('#textFifteen').val();
+    localStorage.setItem('fifteen', fifteenAppt);   
+  })
+   const setFifteen = $("#textFifteen");
+  const getFifteen = localStorage.getItem('fifteen');
+  setFifteen.text(getFifteen);
+
+//4pm
+  $("#saveSixteen").click(function(){
+    const sixteenAppt = $('#textSixteen').val();
+    localStorage.setItem('sixteen', sixteenAppt);   
+  })
+   const setSixteen = $("#textSixteen");
+  const getSixteen = localStorage.getItem('sixteen');
+  setSixteen.text(getSixteen);
+
+//5pm
+  $("#saveSeventeen").click(function(){
+    const seventeenAppt = $('#textSeventeen').val();
+    localStorage.setItem('seventeen', seventeenAppt);   
+  })
+   const setSeventeen = $("#textSeventeen");
+  const getSeventeen = localStorage.getItem('seventeen');
+  setSeventeen.text(getSeventeen);
+
 });
 
