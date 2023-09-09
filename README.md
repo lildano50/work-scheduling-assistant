@@ -20,7 +20,7 @@ A daily scheduler showing current date that is color coded based on time of day 
 
 
 ## Link to work day scheduler
-
+https://lildano50.github.io/work-scheduling-assistant/
 
 
 ## Screenshot of Working Application
