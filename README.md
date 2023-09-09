@@ -24,5 +24,7 @@ A daily scheduler showing current date that is color coded based on time of day 
 
 
 ## Screenshot of Working Application
+![working-schedule-1](https://github.com/lildano50/work-scheduling-assistant/assets/119541939/1cd93568-9332-44a7-a380-8d597a41f3ce)
+![working-schedule-2](https://github.com/lildano50/work-scheduling-assistant/assets/119541939/65daa9d5-c2de-432e-b3c7-fd71b64a9ba3)
 
 
